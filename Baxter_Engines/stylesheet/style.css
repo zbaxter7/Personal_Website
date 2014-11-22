@@ -1,0 +1,306 @@
+body{
+  background: linear-gradient(#0652F3, #0014A8);
+  background-repeat: no-repeat;
+  font-family: ariel;
+  font-size: 18px;
+  height: 100%; 
+}
+
+#wrapper{
+  background-color: #ddd;
+  border: 2px;
+  border-color: #A60000;
+  border-radius: 1px;
+  border-style: solid;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#wrapper>header{
+  background-image: url(../images/baxter.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 320px;
+  margin-bottom: 0;
+  text-indent: -9999px;
+  width: 100%;
+}
+  
+#wrapper>header>h1{
+  height: 230px;
+  margin-top: 0;
+  text-indent: -9999px;
+  width: auto;
+}
+
+nav{
+  padding-left: 0;
+}
+  
+nav>ul {
+  list-style: none;
+} 
+  
+nav>ul>li {
+  border: 3px;
+  border-color: #A60000;
+  border-radius: 5px;  
+  border-style: solid;
+  float: left;
+  font-weight: bold;
+  margin-left: 5px;
+  width: 18%;
+}
+  
+nav>ul>li>a {
+  Background-color: #4864D6;
+  border-style: solid;
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav>ul>li>a:link{
+  color: #000;
+}
+
+nav>ul>li>a:visited {
+  color: #000;
+}
+
+nav>ul>li>a:hover, a:focus{
+  color: #00CC00;
+}
+
+footer, h1, h2, h3, h4{
+  clear: both;
+  margin-top: 5%;
+  text-align: center;
+  
+}
+
+
+section>img {
+ 
+  float: left;
+  height: 150px;
+  margin: 4px 8px 4px 8px;
+  width: 250px;
+}
+
+#piston {
+  float: right;
+  height: 250px;
+  margin-right: 2%;
+  margin-top: 5px; 
+  width: 200px;
+}
+
+#head {
+  float: left;
+  margin-left: 1%;
+  margin-top: 5px;
+}
+
+#crank {
+  float: right;
+  margin-right: 1%;
+  margin-top: 5px;
+}
+
+
+section>p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer{
+  background-color: #aaa;
+}
+
+#map_canvas {
+  background-color: #CCC;
+  height: 250px;
+  width: 40%; 
+}
+  
+.service {
+  float: left;
+  margin-left: 10%;
+  margin-top: 5px;
+  text-align: center;
+}  
+
+.service ul {
+  clear: both;
+  text-align: left;
+}
+
+label{
+  display: block;
+  float: left;
+  padding-right: 15px;
+  text-align: right;
+  width: 120px;
+}
+
+input, textarea{
+  display: block;
+  margin-bottom: 20px;
+}
+
+#submit {
+  clear: both;
+  margin-left: 10%;
+  text-align: center;
+}
+
+#email  p{
+  float: right;
+} 
+
+table{
+  clear: both;
+  margin: 5px auto;
+  width: 80%;
+}
+
+td, th{
+  padding: 5px 0 5px 0;
+}
+
+tr:nth-of-type(odd){
+  background-color: #777;
+}
+
+tr:nth-of-type(even){
+  background-color: #898;
+}
+
+@media only screen and (max-width: 960px) {
+  
+  #map_canvas {
+    background-color: #CCC;
+    height: 200px;
+    width: 50%;
+  }
+  
+  #gallery h2{
+    display: none;
+  }
+  
+  .service {
+  float: left;
+  margin-left: 1%;
+  margin-top: 5px;
+  text-align: center;
+}  
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+  #wrapper>header{
+    background-image: url(../images/baxter_mobile2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 175px;
+    margin-bottom: 0;
+    text-indent: -9999px;
+    width: 100%;
+  }
+  
+  nav{
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  nav>ul {
+    list-style: none;
+    padding-left: 0;
+  } 
+  
+  nav>ul>li {
+    border: 3px;
+    border-color: #A60000;  
+    border-style: solid;
+    clear: both;
+    width: 96%;
+  }
+  
+  nav>ul>li>a {
+    Background-color: #4864D6;
+    border-style: solid;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+  }
+  
+  #wrapper{
+    padding: 3px;
+  }
+  
+  section img{
+    display: none;
+  }
+  
+  
+  
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+  h1, h2, h3, h4{
+    text-align: center;
+  }
+  
+  #wrapper>header{
+    background-image: url(../images/baxter_mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 110px;
+    margin-bottom: 0;
+    text-indent: -9999px;
+    
+  }
+  
+  #map_canvas {
+    background-color: #ccc;
+    height: 200px;  
+    width: 90%;
+  }
+  
+  #gallery{
+    display: none;
+  }
+  
+  label{
+    display: block;
+    float: left;
+    text-align: left;
+    padding-right: 15px;
+    width: 120px;
+  }
+
+  input, textarea{
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  #submit {
+    clear: both;
+    margin-left: 10%;
+    text-align: center;
+  }
+  
+  #email {
+    clear: both;
+  }
+ 
+}

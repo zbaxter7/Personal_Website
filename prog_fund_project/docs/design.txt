@@ -1,0 +1,175 @@
+PROBLEM STATEMENT:
+  The program will prompt for the total hits and the total At-bats of 3 players. 
+  It will then calculate the batting average of each player and display them
+  in a table. Displaying the group batting average of the 3 players.
+  The program will then display a message for each player according to their 
+  batting average.
+
+Nouns: total hits, at-bats, 3 players, batting average, highest to lowest, group average.
+
+Verbs: prompt, calculate, display.
+
+
+DEFINING DIAGRAM:
+
+Inputs:
+  playerNames
+  hits
+  atBats
+
+Processing:
+  calculate battingAvg
+  calculate groupAvg
+  create message
+
+Outputs:
+  playerNames
+  battingAvg
+  groupAvg
+  message
+  
+SOLUTION ALGORITHM:
+  BattingAverageCalculator
+    For playerNames < 3
+      prompt for playerNames
+      prompt for hits
+      prompt for atBats
+      If hits > atBats Then
+        display "I think you mixed up hits and at-bats! We can keep going or refresh to start over."
+      battingAvg = hits / atBats
+    EndFor
+    groupAvg = (hits[0] + hits[1] + hits[2])  / (atBats[0], atBats[1], atBats[2])
+    display groupAvg
+    If battingAvg >= .750 Then
+      display playerNames + " has a very high average!"
+    Else If battingAvg >= .500 Then
+      display playerNames + "is getting a hit over 50% of the time!"
+    Else If battingAvg >= .250 Then
+      display playerNames + "'s average is kind of low" 
+    Else If battingAvg < .250 Then
+      display playerNames + "'s average is extremely low!"
+    EndIf
+  End		 
+  
+  
+  TEST PLANS:
+  
+  VARIABLES: playerNames, atBats, hits, battingAvg, groupAvg
+  
+  TEST PLAN 1:
+  
+  INPUT VALUES: zach, 10, 3 | carl, 13, 5 | ryan, 20, 15 
+  
+  EXPECTED RESULTS: 1. zach .300 zach's average is kind of low
+                    2. carl .385 carl's average is kind of low
+                    3. ryan .750 ryan has a very high average!
+                    group avg .535
+  
+  ACTUAL RESULTS:   1. zach .300 zach's average is kind of low
+                    2. carl .385 carl's average is kind of low
+                    3. ryan .750 ryan has a very high average!
+                    group avg .535
+  
+  
+  TEST PLAN 2:
+  
+  INPUT VALUES: zach, 105, 75 | carl, 142, 70 | ryan, 95, 21
+  
+  EXPECTED RESULTS: 1. zach .714 zach is getting a hit over 50% of the time!
+                    2. carl .493 carl's average is kind of low
+                    3. ryan .221 ryan's average is extremlely low!
+                    group avg .485
+  
+  ACTUAL RESULTS:   1. zach .714 zach is getting a hit over 50% of the time!
+                    2. carl .493 carl's average is kind of low
+                    3. ryan .221 ryan's average is extremlely low!
+                    group avg .485
+  
+  
+  TEST PLAN 3:
+  
+  INPUT VALUES: zach, hits: 100, atBats: 50
+  
+  EXPECTED RESULTS: I think you mixed up hits and at-bats! We can keep going or refresh to start over.
+  
+  ACTUAL RESULTS:  I think you mixed up hits and at-bats! We can keep going or refresh to start over.
+  
+  
+  TEST PLAN 4:
+  
+  INPUT VALUES: zach: 500, 300, carl: 2003, 107,  ryan: 30, 8
+  
+  EXPECTED RESULTS: 1. zach .600 zach is getting a hit over 50% of the time!
+                    2. carl .053 carl's average is extremely low!
+                    3. ryan .267 ryan's average is kind of low
+                    group avg .164
+  
+  ACTUAL RESULTS:   1. zach .600 zach is getting a hit over 50% of the time!
+                    2. carl .053 carl's average is extremely low!
+                    3. ryan .267 ryan's average is kind of low
+                    group avg .164
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Baxter Engines Inc.</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="icon" type="img/ico" href="images/engine.ico">
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(44.839356, -91.617467),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Baxter Engines</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <section>  
+        <h2>About Us</h2>
+        <p>Baxter Engines is a small local engine and machine shop owned by Gary Baxter since 1980. 
+        There's no end to the variety of work we do in our shop. From small Kohler Engines to gigantic
+        tractor engines, go-kart to stock car engines, we have rebuilt it all. The thing that separates us from
+        other engine shops is the expert machine work we do in-between the dismantle and re-assembly of each engine.
+        It might seem like there's a million different things that could go wrong on the inside, but we've seen 
+        it all. Check out the <a href="services.html">Services</a> page to see the most common machine work we do, but don't hesitate to give us 
+        a call or stop in and see what we can do for you.</p>
+        <h2>Directions</h2>
+        <p>We are located on the west side of Eau Claire across the bridge that goes over I-94 from the North Crossing(312). For
+        more detailed directions call us at (715) 874-4142 or observe the map below.</p>
+      </section> 
+      <div id="map_canvas"></div>      
+      <footer>
+        <small> Copyright &copy; 2014 Baxter Engines Inc.</small>
+      </footer>
+    </div>  
+  </body>
+</html>

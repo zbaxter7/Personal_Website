@@ -1,0 +1,42 @@
+body{
+  background-color: #457872;
+}
+
+table{
+  clear: both;
+  border: 2px solid black;
+  margin: 5px auto;
+  width: 60%;
+}
+
+td, th{
+  padding: 5px 0 5px 5px;
+}
+
+tr:nth-of-type(odd){
+  background-color: #BBB;
+}
+
+tr:nth-of-type(even){
+  background-color: #EEE;
+}
+
+h1{
+  text-align: center;
+}
+
+#number{
+  width: 3%;
+}
+
+#player{
+  width: 15%;
+}
+
+#avg{
+  width: 10%;
+}
+
+#message{
+  width: 20%;
+}

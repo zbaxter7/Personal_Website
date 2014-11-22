@@ -1,0 +1,232 @@
+body {
+  background-color: #555;
+  background-image: url("../images/MillerParkPanorama.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  color: white;
+}
+
+h1 {
+  font-family: Lucida Calligraphy;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > li {
+  display: inline;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+nav > ul > li > a {
+  color: #00a43a;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  color: #070;
+}
+
+#wrapper {
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.mainContent {
+  margin-top: 355px;
+}
+
+.mainContent p {
+  font-size: 20px;
+  width: 50%;
+}
+
+.mainContent h2 {
+  font-size: 30px;
+}
+
+#contact {
+  border: solid;
+  border-color: black;
+  border-radius: 20px;
+  color: #00a43a;
+  display: block;
+  height: 100px;
+  margin: auto;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  text-align: left;
+  width: 300px;
+}
+
+#contact > p {
+  font-size: 20px;
+  text-align: left;
+}
+
+#contact > p > a {
+  color: #00a43a;
+}
+
+#contact > p > a:hover {
+  color: #070;
+}
+
+footer, h1, h2, h3 {
+  clear: both;
+  text-align: center; 
+}
+
+
+
+footer {
+  background-color: #555;
+  color: #FFF;
+  width: 100%;
+}
+
+hr {
+  width: 960px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#projects > h2 {
+  clear: both;
+  margin-left: 5%;
+  padding-top: 5%;
+  text-align: left;
+}
+
+#projects > h3 {
+  margin-left: 8%;
+  text-align: left;
+}
+
+#projects > p {
+  clear: both;
+  margin-left: 11%;
+  text-align: left;
+}
+
+#projects a {
+  color: #00a43a;
+  text-decoration: none;
+}
+
+#projects > p > a:hover, a:focus {
+  color: #070;
+}
+
+#projects>h4 {
+  clear: both;
+  font-size: 18px;
+  padding-top: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #00a43a;
+}
+
+footer a:hover {
+  color: #070;
+}
+
+@media only screen and (max-width: 960px) {  /*Tablet*/
+  
+  nav > ul > li {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .mainContent {
+    margin-top: 150px;
+  }
+  
+  .mainContent p {
+    width: 70%;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {  /*Mobile*/
+  
+  nav {
+  margin-bottom: 50px;
+  }
+
+  nav > ul {
+    list-style: none;
+    margin-top: 50px;
+    
+  }
+
+  nav > ul > li {
+    border: solid;
+    border-color: #000;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 50%;
+  }
+
+  nav > ul > li > a {
+    color: #000;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  nav > ul > li > a:visited {
+    color: #000;
+  }
+
+  nav> ul > li > a:hover, a:focus {
+    color: #FFF;
+  }  
+  
+  .mainContent {
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+
+
+
+
+
