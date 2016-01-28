@@ -1,0 +1,41 @@
+.container {
+  color: #444;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 960px) {
+
+  body {
+    background-color: #ddd;
+  }
+
+  .container {
+    background-color: #fff;
+    border: 1px solid #666;
+    padding: 1em;
+    width: 80%;
+  }
+
+}
+
+.container > footer, .container > header {
+  text-align: center;
+}
+
+.container a { color: #333; }
+.container a:hover { color: #999; }
+.container a:visited { color: #333; }
+
+.media a {
+  color: #333;
+  margin: 0.5em;
+  text-decoration: none;
+}
+
+h1 { border-bottom: 1px solid #666; }
+article h2 { font-size: 1.25em }
+
+@media only screen and (min-width: 960px) {
+  article { margin-left: 1em; }
+}
+
