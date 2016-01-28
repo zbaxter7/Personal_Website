@@ -180,7 +180,8 @@ footer a:hover {
 @media only screen and (max-width: 480px) {  /*Mobile*/
   
   nav {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  margin-top: -20px;
   }
 
   nav > ul {
