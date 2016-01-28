@@ -27,7 +27,11 @@ $(function() {
 
     }, function() {
 
+<<<<<<< HEAD
       $links.delay(1500).animate({
+=======
+      $links.delay(2000).animate({
+>>>>>>> f8c2ed699ad0d86f43f1d4c2f0fbf51c358bb048
 
         left: "0",
         opacity: "1"
@@ -38,4 +42,8 @@ $(function() {
     
   }
   
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> f8c2ed699ad0d86f43f1d4c2f0fbf51c358bb048
